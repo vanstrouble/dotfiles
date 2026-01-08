@@ -1,0 +1,13 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Pedro Vázquez
+	email = vanstrouble@proton.me
+	signingkey = ~/.ssh/id_ed25519
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

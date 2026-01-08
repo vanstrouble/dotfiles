@@ -1,0 +1,17 @@
+command = /bin/zsh
+macos-icon = custom
+click-repeat-interval = 500
+auto-update-channel = stable
+window-width = 110
+window-height = 40
+window-save-state = default
+shell-integration = zsh
+shell-integration-features = no-cursor, title, ssh-terminfo
+theme = catppuccin-macchiato.conf
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 16
+font-thicken = true
+cursor-style = block
+cursor-style-blink = true
+mouse-hide-while-typing = true
+bell-features = no-attention, no-system
