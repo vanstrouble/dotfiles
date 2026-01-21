@@ -5,6 +5,7 @@ auto-update-channel = stable
 window-width = 110
 window-height = 40
 window-save-state = default
+resize-overlay = never
 shell-integration = zsh
 shell-integration-features = no-cursor, title, ssh-terminfo
 theme = catppuccin-macchiato.conf
