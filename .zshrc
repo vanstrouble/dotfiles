@@ -83,6 +83,7 @@ alias zshconfig="code ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias ..="z .."
 alias ...="z ..."
+alias c="clear"
 
 export FZF_DEFAULT_OPTS='
   --height 40%
