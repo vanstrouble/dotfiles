@@ -84,6 +84,7 @@ alias zshreload="source ~/.zshrc"
 alias ..="z .."
 alias ...="z ..."
 alias c="clear"
+alias pn=pnpm
 
 export FZF_DEFAULT_OPTS='
   --height 40%
