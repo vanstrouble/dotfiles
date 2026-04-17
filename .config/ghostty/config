@@ -1,5 +1,6 @@
 command = /bin/zsh
 macos-icon = custom
+macos-custom-icon = ~/.config/ghostty/Ghostty.icns
 click-repeat-interval = 500
 auto-update-channel = stable
 window-width = 110
