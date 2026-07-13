@@ -29,11 +29,12 @@ zstyle ':fzf-tab:complete:*:*' \
   fzf-preview '[[ -d $realpath ]] && eza --icons --color=always $realpath || bat --color=always $realpath'
 zstyle ':omz:plugins:eza' 'icons' yes
 
-# Plugins & completions (reordered)
+# Plugins & completions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light conda-incubator/conda-zsh-completion
 
 # OMZ snippets
 zinit snippet OMZP::git
@@ -57,17 +58,6 @@ _comp_options+=(globdots)
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window up:3:hidden:wrap --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
-
-# Conda
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [[ $? -eq 0 ]]; then
-    eval "$__conda_setup"
-elif [[ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]]; then
-    source "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-else
-    export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
-fi
-unset __conda_setup
 
 # Keybindings
 autoload -U select-word-style
