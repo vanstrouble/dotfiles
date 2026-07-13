@@ -52,6 +52,8 @@ eval "$(zoxide init zsh)"
 autoload -Uz compinit
 compinit
 
+_comp_options+=(globdots)
+
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window up:3:hidden:wrap --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
@@ -68,6 +70,9 @@ fi
 unset __conda_setup
 
 # Keybindings
+autoload -U select-word-style
+select-word-style bash
+
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
