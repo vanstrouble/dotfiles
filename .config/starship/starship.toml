@@ -15,12 +15,11 @@ $rust\
 $golang\
 $nodejs\
 $php\
-$python\
-$conda\
 $java\
 $kotlin\
 $haskell\
 $python\
+$conda\
 [](fg:teal bg:blue)\
 $docker_context\
 [](fg:blue bg:purple)\
