@@ -35,6 +35,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light conda-incubator/conda-zsh-completion
+zinit light MichaelAquilina/zsh-you-should-use
 
 # OMZ snippets
 zinit snippet OMZP::git
